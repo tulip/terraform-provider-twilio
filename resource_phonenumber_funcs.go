@@ -119,7 +119,7 @@ func phonenumberUpdate(d *schema.ResourceData, meta interface{}) error {
 		incomingNumber.SmsUrl = d.Get("sms_url").(string)
 	}
 	if d.HasChange("sms_method") {
-		incomingNumber.SmsUrl = d.Get("sms_method").(string)
+		incomingNumber.SmsMethod = d.Get("sms_method").(string)
 	}
 	if d.HasChange("sms_fallback_url") {
 		incomingNumber.SmsFallbackUrl = d.Get("sms_fallback_url").(string)
