@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	twilioc "github.com/donaldguy/twiliogo"
 	"github.com/hashicorp/terraform/helper/schema"
+	twilioc "github.com/tulip/twiliogo"
 )
 
 func phonenumberCreate(d *schema.ResourceData, meta interface{}) error {

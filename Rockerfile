@@ -1,8 +1,8 @@
 FROM golang
-MOUNT .:/go/src/github.com/donaldguy/terraform-provider-twilio
-WORKDIR /go/src/github.com/donaldguy/terraform-provider-twilio
+MOUNT .:/go/src/github.com/tulip/terraform-provider-twilio
+WORKDIR /go/src/github.com/tulip/terraform-provider-twilio
 ATTACH ["/bin/bash"]
 RUN go get
-TAG terraform-provider-twili-buildenv
+TAG terraform-provider-twilio-buildenv
 RUN go build
 

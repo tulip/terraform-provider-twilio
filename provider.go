@@ -4,7 +4,7 @@ import (
 	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/hashicorp/terraform/terraform"
 
-	twilioc "github.com/donaldguy/twiliogo"
+	twilioc "github.com/tulip/twiliogo"
 )
 
 func provider() terraform.ResourceProvider {

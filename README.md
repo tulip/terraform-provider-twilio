@@ -19,7 +19,7 @@ https://www.twilio.com/docs/api/rest/incoming-phone-numbers
 
 Arguments mostly follow those documented there with snake case instead of CamelCase (though with `name` instead of `FriendlyName`).
 
-TL;DR  read the [schema](https://github.com/donaldguy/terraform-provider-twilio/blob/master/resource_phonenumber_schema.go)
+TL;DR  read the [schema](https://github.com/tulip/terraform-provider-twilio/blob/master/resource_phonenumber_schema.go)
 
 
 ### Example Usage
@@ -58,3 +58,22 @@ resource "twilio_phonenumber" "virginia" {
 
 
 ```
+## Contributing
+
+How to submit changes:
+
+1. Fork this repository.
+2. Make your changes.
+3. Email us at opensource@tulip.co to sign a CLA.
+4. Submit a pull request.
+
+
+## Who's Behind It
+
+terraform-provider-twilio is maintained by Tulip. We're an MIT startup located in Boston, helping enterprises manage, understand, and improve their manufacturing operations. We bring our customers modern web-native user experiences to the challenging world of manufacturing, currently dominated by ancient enterprise IT technology. We work on Meteor web apps, embedded software, computer vision, and anything else we can use to introduce digital transformation to the world of manufacturing. If these sound like interesting problems to you, [we should talk](mailto:jobs@tulip.co).
+
+
+## License
+
+terraform-provider-twilio is licensed under the [Apache Public License](LICENSE).
+
