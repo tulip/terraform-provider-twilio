@@ -4,5 +4,6 @@ WORKDIR /go/src/github.com/tulip/terraform-provider-twilio
 ATTACH ["/bin/bash"]
 RUN go get
 TAG terraform-provider-twilio-buildenv
-RUN go build
+RUN mkdir -p build/Linux
+RUN go build -o build/Linux/terraform-provider-twilio
 
