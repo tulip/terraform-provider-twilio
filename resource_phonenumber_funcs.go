@@ -33,7 +33,7 @@ func phonenumberCreate(d *schema.ResourceData, meta interface{}) error {
 				filters = append(filters, twilioc.InPostalCode(v.(string)))
 			case "rate_center":
 				filters = append(filters, twilioc.InRateCenter(v.(string)))
-			case "LATA":
+			case "lata":
 				filters = append(filters, twilioc.InLata(v.(string)))
 			}
 		}

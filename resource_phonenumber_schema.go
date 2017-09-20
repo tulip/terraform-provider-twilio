@@ -69,7 +69,7 @@ func resourcePhonenumber() *schema.Resource {
 							Description: "Limit results to a specific rate center, or given a phone number search within the same rate center as that number. Requires InLata to be set as well.",
 							Optional:    true,
 						},
-						"LATA": &schema.Schema{
+						"lata": &schema.Schema{
 							Type:        schema.TypeString,
 							Description: "Limit results to a specific Local access and transport area (LATA). Given a phone number, search within the same LATA as that number.",
 							Optional:    true,
