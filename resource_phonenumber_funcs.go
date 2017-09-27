@@ -39,8 +39,7 @@ func phonenumberCreate(d *schema.ResourceData, meta interface{}) error {
 		}
 	}
 
-	//numbers, err := twilioc.GetLocalAvailablePhoneNumbers(
-    numbers, err := twilioc.GetMobileAvaliablePhoneNumber(
+	numbers, err := twilioc.GetLocalAvailablePhoneNumbers(
 		m.Client,
 		d.Get("iso_country_code").(string),
 		filters...,
